@@ -82,6 +82,12 @@ html {
   padding: 20px;
 }
 
+/* .hero h1,
+.hero p {
+  text-shadow: -5px -5px 0 #000, 5px -5px 0 #000, -5px 5px 0 #000,
+    5px 5px 0 #000;
+} */
+
 button {
   background: linear-gradient(
     to right,
@@ -247,16 +253,35 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-  .pricing-box {
-    width: 100%; /* Full width on smaller screens for better visibility */
-    margin: 10px 0; /* Vertical margin only */
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
   }
-}
 
-@media (max-width: 768px) {
+  .brand span {
+    display: none; /* Hide the title text next to the brand logo on mobile */
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar li {
+    margin: 0 10px; /* Adjust margin to space out links */
+  }
+
+  .navbar a {
+    padding: 10px;
+    display: inline-block; /* Ensure links are inline */
+  }
+
   .pricing-box {
-    width: 100%; /* Full width on smaller screens for better visibility */
-    margin: 10px 0; /* Vertical margin only */
+    width: 90%; /* Adjust width to fit better on smaller screens */
   }
 }
 
