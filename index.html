@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shineru Bot</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Google Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <nav class="navbar">
-      <div class="brand">
-        <img src="logo.png" alt="Brand Logo" />
-        <!-- Replace 'logo.png' with your image path -->
-        <span>SHINERU</span>
-      </div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#examples">Examples</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shineru Bot</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <div id="home" class="hero">
+<body>
+  <nav class="navbar">
+    <div class="brand">
+      <img src="logo.png" alt="Brand Logo" />
+      <!-- Replace 'logo.png' with your image path -->
+      <span>SHINERU</span>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#examples">Examples</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+  </nav>
+
+  <div id="home" class="hero">
+    <div class="hero-content">
       <img src="logo.png" alt="Hero Logo" class="hero-logo" />
       <h1>Your Personal Anime Art Creator</h1>
       <p>
@@ -37,67 +37,58 @@
         stunning anime images.
       </p>
       <button onclick="inviteBot()">Add to Discord</button>
-      <!-- <div class="stats">
+    </div>
+    <!-- <div class="stats">
         <span>🖥️ 76 servers</span>
       </div> -->
+  </div>
+  <div id="examples" class="examples-section">
+    <!-- Assuming image placeholders; replace src with actual paths -->
+    <h2>Examples</h2>
+    <div class="gallery">
+      <img src="example1.png" alt="Example 1" />
+      <img src="example2.png" alt="Example 2" />
+      <img src="example3.png" alt="Example 3" />
+      <img src="example4.png" alt="Example 4" />
+      <img src="example5.png" alt="Example 5" />
+      <img src="example6.png" alt="Example 6" />
+      <img src="example7.png" alt="Example 7" />
+      <img src="example8.png" alt="Example 8" />
+      <img src="example9.png" alt="Example 9" />
+      <img src="example10.png" alt="Example 10" />
     </div>
-    <div id="examples" class="examples-section">
-      <!-- Assuming image placeholders; replace src with actual paths -->
-      <h2>Examples</h2>
-      <div class="gallery">
-        <img src="example1.png" alt="Example 1" />
-        <img src="example2.png" alt="Example 2" />
-        <img src="example3.png" alt="Example 3" />
-        <img src="example4.png" alt="Example 4" />
-        <img src="example5.png" alt="Example 5" />
-        <img src="example6.png" alt="Example 6" />
-        <img src="example7.png" alt="Example 7" />
-        <img src="example8.png" alt="Example 8" />
-        <img src="example9.png" alt="Example 9" />
-        <img src="example10.png" alt="Example 10" />
+  </div>
+  <div id="pricing" class="pricing-section">
+    <h2>Pricing</h2>
+    <div class="pricing-container">
+      <div class="pricing-box">
+        <h3>Free</h3>
+        <p>Generate one image a day per member.</p>
+        <a href="https://discord.com/oauth2/authorize?client_id=1137732926465904721&permissions=8&integration_type=0&scope=bot+applications.commands"
+          class="button-link"><button class="button">Add to Discord</button></a>
+      </div>
+      <div class="pricing-box">
+        <h3>$4.99</h3>
+        <p>Generate 500 images without any cooldown period.</p>
+        <a href="https://discord.gg/shineru" class="button-link"><button class="button">Buy Now</button></a>
+      </div>
+      <div class="pricing-box">
+        <h3>$9.99</h3>
+        <p>Generate 1,000 Images without any cooldown period.</p>
+        <a href="https://discord.gg/shineru" class="button-link"><button class="button">Buy Now</button></a>
       </div>
     </div>
-    <div id="pricing" class="pricing-section">
-      <h2>Pricing</h2>
-      <div class="pricing-container">
-        <div class="pricing-box">
-          <h3>Free</h3>
-          <p>Generate one image a day per member.</p>
-          <a
-            href="https://discord.com/oauth2/authorize?client_id=1137732926465904721&permissions=8&integration_type=0&scope=bot+applications.commands"
-            class="button-link"
-            ><button class="button">Add to Discord</button></a
-          >
-        </div>
-        <div class="pricing-box">
-          <h3>$4.99</h3>
-          <p>Generate 500 images without any cooldown period.</p>
-          <a href="https://discord.gg/shineru" class="button-link"
-            ><button class="button">Buy Now</button></a
-          >
-        </div>
-        <div class="pricing-box">
-          <h3>$9.99</h3>
-          <p>Generate 1,000 Images without any cooldown period.</p>
-          <a href="https://discord.gg/shineru" class="button-link"
-            ><button class="button">Buy Now</button></a
-          >
-        </div>
-      </div>
-    </div>
+  </div>
 
-    <footer>
-      <div class="footer-content">
-        <p>© 2024 All rights reserved.</p>
-        <a
-          href="https://discord.gg/shineru"
-          target="_blank"
-          title="Support Server"
-        >
-          <img src="Discord Logo.png" alt="Discord Logo" class="discord-logo" />
-        </a>
-      </div>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 All rights reserved.</p>
+      <a href="https://discord.gg/shineru" target="_blank" title="Support Server">
+        <img src="Discord Logo.png" alt="Discord Logo" class="discord-logo" />
+      </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
